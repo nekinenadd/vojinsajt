@@ -1,8 +1,15 @@
-.logopic{
-    height: 3rem;
+.card:hover{
+    background-color: rgb(192, 192, 192);
+    color: white;
+    cursor: pointer;
+    transform: sacle(1.03);
+    transition: all 1s ease;
 }
 
+.navbar{
+    color: black;
+}
 
-.karchel-img{
-    width: 8rem;
+.display-3{
+    color: azure;
 }
