@@ -1,7 +1,15 @@
+.sm-icons{ 
+    flex-direction: row;
+}
 
+body{
+    background-image: url(/img/background-img.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+}
 
 .card:hover{
-    background-color: rgb(192, 192, 192);
+    background-color: rgba(210, 119, 0, 0.5);
     color: white;
     cursor: pointer;
     transform: sacle(1.03);
@@ -10,8 +18,16 @@
 
 .navbar{
     color: black;
+    
 }
 
-.display-3{
-    color: azure;
+
+#footer{
+    z-index: 100;
+}
+
+.jumbotron{
+}
+
+.card{
 }
