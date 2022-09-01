@@ -3,13 +3,10 @@
 }
 
 body{
-    background-image: url(/img/background-img.jpg);
-    background-position:top;
-    background-repeat: no-repeat;
 }
 
 .card:hover{
-    background-color: rgba(210, 119, 0, 0.5);
+    background-color: rgba(29, 29, 29, 0.851);
     color: white;
     cursor: pointer;
     transform: sacle(1.03);
