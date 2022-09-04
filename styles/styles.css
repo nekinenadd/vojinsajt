@@ -1,4 +1,4 @@
-.sm-icons{ 
+.sm-icons{
     flex-direction: row;
 }
 
@@ -27,4 +27,7 @@ body{
 }
 
 .card{
+}
+
+#brand-card{
 }

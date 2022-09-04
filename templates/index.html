@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- nav bar-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/img/logo.png" style="height: 2.5rem;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -33,11 +33,13 @@
                 <a class="nav-link" href="#">Contact me</a>
               </li>    
             </ul>
-            <ul class="navbar-nav sm-icons">
-              <li><a class="nav-link" href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a class="nav-link" href="#"><i class="bi bi-instagram"></i></a></li>
-              <li><a class="nav-link" href="#"><i class="bi bi-pinterest"></i></a></li>
-          </ul>
+            <div class="d-flex justify-content-sm-center">
+                <ul class="navbar-nav sm-icons justify-content-between">
+                  <li><a class="nav-link" href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li><a class="nav-link" href="#"><i class="bi bi-instagram"></i></a></li>
+                  <li><a class="nav-link" href="#"><i class="bi bi-pinterest"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -138,9 +140,9 @@
 
     <!--three column section-->
 
-    <div class="container">
-        <div class="row g-5 pt-5 pb-5">
-            <div class="col-12 col-md-6 col-lg-4">
+    <div class="container-fluid">
+        <div class="row g-5 pt-5 pb-5 justify-content-md-space-between">
+            <div class="col-12 col-md-6 col-lg-4 px-3" id="brand-card">
                 <div class="card">
                     <img src="/img/bosch-logo.png" class="card-img-top">
                     <div class="card-body">
@@ -149,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 px-3" id="brand-card">
                 <div class="card">
                     <img src="/img/karcher-logo.png" class="card-img-top">
                     <div class="card-body">
@@ -158,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 px-3" id="brand-card">
                 <div class="card">
                     <img src="/img/alfa-romeo.png" class="card-img-top">
                     <div class="card-body">
@@ -200,8 +202,68 @@
 
 -->
 
+  <!--Price-->
 
-    <!--Tekst-->
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Povrsinsko ciscenje</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">700<small class="text-muted fw-light">/din</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Pranje vozila spolja</li>
+            <li>Usisavanje</li>
+            <li>Poliranje table</li>
+            <li>Pranje svih stakala</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Zakazi</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Dubinsko pranje</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">1500<small class="text-muted fw-light">/din</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>20 users included</li>
+            <li>10 GB of storage</li>
+            <li>Priority email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 text-white bg-primary">
+          <h4 class="my-0 fw-normal">Enterprise</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/din</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>30 users included</li>
+            <li>15 GB of storage</li>
+            <li>Phone and email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+    <!--Profesionalno poliranje-->
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -221,7 +283,7 @@
 
 
 
-    <!--Tekst-->
+    <!--About us-->
 
     <div class="bg-dark text-secondary px-4 py-5 text-center">
       <div class="py-5">
@@ -245,13 +307,13 @@
 
     <!--footer-->
 
-  <footer class="bg-light text-white pt-2 pb-2">
+  <footer class="bg-dark text-white pt-2 pb-2">
     <div class="container text-center text-md-left">
 
         <div class="row text-center text-md-left">
 
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Company name</h5>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">Company name</h5>
           </div>
 
         </div>
