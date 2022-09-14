@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="/static/js/main.js" rel="text/javascript">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -290,12 +291,12 @@
               <label for="floatingInput">Email adresa</label>
             </div>
             <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" style="height: 100px"></textarea>
+              <textarea class="form-control" id="message" name="message" style="height: 100px"></textarea>
               <label for="message">Opis paketa i datum izabranog paketa</label>
             </div>
             <div class="checkbox mb-3">
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Posalji</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="success();">Posalji</button>
             <hr class="my-4">
             <small class="text-muted">Preporucujemo zakazivanje pozivom.</small>
             <button type="button" class="btn btn-outline-dark btn-sm" onclick="window.open('tel:900300400');">Pozovi</button>

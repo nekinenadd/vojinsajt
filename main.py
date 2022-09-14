@@ -1,19 +1,13 @@
 from flask import Flask,render_template,request
-import smtplib
+from redmail import outlook
 
 
 
 app = Flask(__name__)
-mail = Mail(app)
 
 
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config["MAIL_USERNAME"] = "rsautomobili02@gmail.com"
-app.config["MAIL_PASSWORD"] = "gutbjibjoxhkorvp"
-app.config["MAIL_USE_SSL"] = True
-mail = Mail(app)
 
+@app.route('/home')
 @app.route('/', methods=['POST','GET'])
 def home():
     return render_template('index.html')
@@ -22,7 +16,21 @@ def home():
 
 @app.route('/send',methods=['POST','GET'])
 def send():
-    return render_template('index.html')
+    sender_email = request.form.get('email')
+    mess = request.form.get('message')
+
+    outlook.username = "nenaddjurdjevic2002@outlook.com"
+    outlook.password = "Fender12002"
+
+    outlook.send(
+    receivers=["rsautomobili02@gmail.com"],
+    subject=sender_email,
+    text=mess
+    )
+
+
+    return render_template('success.html')
+
 
 
 
